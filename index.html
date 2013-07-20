@@ -11,89 +11,48 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/foundation.css">
+  <link href='http://fonts.googleapis.com/css?family=Dosis:200,400' rel='stylesheet' type='text/css'>
 
   <script src="js/vendor/custom.modernizr.js"></script>
+  
+  <style>
+	body {
+		font-size: 1.2em;
+		}
+	#logo img {
+		float: left;
+		}
+	.title {
+		background-color:#f38400;
+		height:150px;
+		}
+	.title span {
+		color: white;
+		float: left;
+		font-family: 'Dosis', sans-serif;
+		font-size: 6em;
+		padding:12px 0px;
+		
+		-moz-text-shadow: 2px 2px 35px rgba(0,0,0,0.3);
+		-webkit-text-shadow: 2px 2px 35px rgba(0,0,0,0.3);
+		text-shadow: 2px 2px 35px rgba(0,0,0,0.3);
+		}
+  </style>
 </head>
 <body>
-
-<!-- Navigation -->
-
-  <nav class="top-bar">
-    <ul class="title-area">
-      <!-- Title Area -->
-      <li class="name">
-        <h1>
-          <a href="#">
-            Top Bar Title
-          </a>
-        </h1>
-      </li>
-      <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
-    </ul>
- 
-    <section class="top-bar-section">
-      <!-- Right Nav Section -->
-      <ul class="right">
-        <li class="divider"></li>
-        <li class="has-dropdown">
-          <a href="#">Main Item 1</a>
-          <ul class="dropdown">
-            <li><label>Section Name</label></li>
-            <li class="has-dropdown">
-              <a href="#" class="">Has Dropdown, Level 1</a>
-              <ul class="dropdown">
-                <li><a href="#">Dropdown Options</a></li>
-                <li><a href="#">Dropdown Options</a></li>
-                <li><a href="#">Level 2</a></li>
-                <li><a href="#">Subdropdown Option</a></li>
-                <li><a href="#">Subdropdown Option</a></li>
-                <li><a href="#">Subdropdown Option</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Dropdown Option</a></li>
-            <li><a href="#">Dropdown Option</a></li>
-            <li class="divider"></li>
-            <li><label>Section Name</label></li>
-            <li><a href="#">Dropdown Option</a></li>
-            <li><a href="#">Dropdown Option</a></li>
-            <li><a href="#">Dropdown Option</a></li>
-            <li class="divider"></li>
-            <li><a href="#">See all &rarr;</a></li>
-          </ul>
-        </li>
-        <li class="divider"></li>
-        <li><a href="#">Main Item 2</a></li>
-        <li class="divider"></li>
-        <li class="has-dropdown">
-          <a href="#">Main Item 3</a>
-          <ul class="dropdown">
-            <li><a href="#">Dropdown Option</a></li>
-            <li><a href="#">Dropdown Option</a></li>
-            <li><a href="#">Dropdown Option</a></li>
-            <li class="divider"></li>
-            <li><a href="#">See all &rarr;</a></li>
-          </ul>
-        </li>
-      </ul>
-    </section>
-  </nav>
- 
-  <!-- End Top Bar -->
-
   <div class="row">
     <div class="large-12 columns">
 
     <!-- Content Slider -->
 
-      <div class="row">
-        <div class="large-12 hide-for-small">
-
-          <div id="featured" data-orbit>
-              <img src="http://placehold.it/1200x500&text=Slide Image 1" alt="slide image">
-            </div>
-
-      </div>
-    </div>
+	<div class="row title">
+		<div class="large-12 hide-for-small">
+			<div id="logo">
+			  <img src="img/pixelrelay.png" alt="PixelRelay">
+			  <span class="title">PixelRelay</span>
+			</div>
+		</div>
+	</div>
 
     <!-- End Content Slider -->
 
@@ -216,7 +175,7 @@
             <div class="row">
 
               <div class="large-6 columns">
-                  <p>&copy; Copyright no one at all. Go to town.</p>
+                  <p>&copy; Copyright 2013 PixelRelay.</p>
               </div>
 
               <div class="large-6 small-12 columns">
