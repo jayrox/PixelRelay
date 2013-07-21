@@ -16,7 +16,7 @@
    *
    *  uploaded_file            -- The binary file uploaded
    *  user_email              -- The email address associated to the uploader's Google Play account
-   *  user_private_key    -- The private key used to authenticate the upload
+   *  user_private_key        -- The private key used to authenticate the upload
    *  file_host                -- The Image Host preference from the Android app
    *  file_album              -- The Photo Album preference
    *  file_name                -- The name of the file within Android
