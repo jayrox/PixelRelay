@@ -43,6 +43,9 @@
     // If you do not want logging, set to false
     define('LOG_FILE', './logs/uploads.txt');
     
+    // Private key to allow uploads
+    define('PRIVATE_KEY', 'asdfzxcvqwertyhb');
+    
     
     // End of configuration    
     
@@ -51,7 +54,7 @@
     
     logd(date("y-m-d H:i:s"));
     
-    if($content['user_private_key'] !== "asdfzxcvqwertyhb")
+    if($content['user_private_key'] !== PRIVATE_KEY)
     {
         $error_code = 'HTTP/1.1 401 Unauthorized';
         header($error_code, TRUE, 401);
