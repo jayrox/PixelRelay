@@ -865,3 +865,9 @@ section #title h1 img {
     display: none;
   }
 }
+
+.footer img {
+	float:left;
+	width:80px;
+	padding-right:5px;
+	}
