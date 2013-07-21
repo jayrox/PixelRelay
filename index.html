@@ -1,211 +1,96 @@
-<!DOCTYPE html>
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-<head>
-  <meta charset="utf-8" />
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>PixelRelay</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-  <!-- Set the viewport width to device width for mobile -->
-  <meta name="viewport" content="width=device-width" />
+  </head>
+  <body>
 
-  <title>PixelRelay</title>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/jayrox/PixelRelay">Fork Server On GitHub</a></li>
+          <li class="downloads2"><a href=""><a href="https://plus.google.com/communities/104129646941026784773"><img src="img/googleplay.png" /></a></li>
+          <li class="downloads"><a href="https://github.com/jayrox/PixelRelay/archive/master.zip">Server ZIP</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/foundation.css">
-  <link href='http://fonts.googleapis.com/css?family=Dosis:200,400' rel='stylesheet' type='text/css'>
+    <div class="wrapper">
 
-  <script src="js/vendor/custom.modernizr.js"></script>
-  
-  <style>
-	body {
-		font-size: 1.2em;
-		}
-	#logo img {
-		float: left;
-		}
-	.title {
-		background-color:#f38400;
-		height:150px;
-		}
-	.title span {
-		color: white;
-		float: left;
-		font-family: 'Dosis', sans-serif;
-		font-size: 6em;
-		padding:12px 0px;
+      <section>
+        <div id="title">
+          <h1><img src="img/pixelrelay.png">PixelRelay</h1>
+          <p>Instant Uploads on Android</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/jayrox">jayrox</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>Instant Uploads</h1>
+
+		<p>You have complete control of your image uploads.</p>
+
+		<ul>
+			<li>Configurable Image host, Photo album, Authentication</li>
+			<li>Signal: wifi, cellular, signal strength, roaming</li>
+			<li>Power Conditions: plugged in, battery levels</li>
+			<li>Plugins: Tasker/Locale and DashClock</li>
+		</ul>
 		
-		-moz-text-shadow: 2px 2px 35px rgba(0,0,0,0.3);
-		-webkit-text-shadow: 2px 2px 35px rgba(0,0,0,0.3);
-		text-shadow: 2px 2px 35px rgba(0,0,0,0.3);
-		}
-  </style>
-</head>
-<body>
-  <div class="row">
-    <div class="large-12 columns">
+		<h2>Plugins</h2>
 
-    <!-- Content Slider -->
+		<p>PixelRelay supports Tasker and DashClock</p>
 
-	<div class="row title">
-		<div class="large-12 hide-for-small">
-			<div id="logo">
-			  <img src="img/pixelrelay.png" alt="PixelRelay">
-			  <span class="title">PixelRelay</span>
-			</div>
-		</div>
-	</div>
+		<p>Tasker integration allows you to configure tasks that can change the photo album and enable/disable automatic uploads.</p>
 
-    <!-- End Content Slider -->
+		<p>DashClock plugin supports current pending uploads and current upload progress</p>
 
-    <!-- Mobile Header -->
+		<h2>Installation</h2>
 
-      <div class="row">
-        <div class="large-12 columns show-for-small">
+		<p>The example PixelRelay upload code is written in PHP to allow the most possible server configurations.</p>
 
-          <img src="http://placehold.it/1200x700&text=Mobile Header">
+		<h2>API</h2>
+		
+		<p>The PixelRelay Android app provides the following params when uploading</p>
+		<pre><code>uploaded_file</code>
+		The binary file being uploaded.</pre>
+		<pre><code>user_email </code>
+		The google account associated with the upload.</pre>
+		<pre><code>user_private_key</code>
+		The private code to allow upload access.</pre>
+		<pre><code>file_host</code>
+		The image host entered in the android app.
+		Provided for server debug purposes.</pre>
+		<pre><code>file_album</code>
+		The album name the user would like
+		the image(s) to be added to.</pre>
+		<pre><code>file_name</code>
+		The file's name from Android.</pre>
+		<pre><code>file_mime</code>
+		The file's mime-type from Android.</pre>
 
-        </div>
-      </div><br>
+		<h2>License</h2>
 
-    <!-- End Mobile Header -->
-
-
-      <div class="row">
-        <div class="large-12 columns">
-          <div class="row">
-            <!-- Shows -->
-            <div class="large-4 small-6 columns">
-
-              <h4>Upcoming Shows</h4><hr>
-
-              <div class="row">
-                <div class="large-1 column">
-                  <img src="http://placehold.it/50x50&amp;text=[img]">
-                </div>
-
-                <div class="large-9 columns">
-                  <h5><a href="#">Venue Name</a></h5>
-                  <h6 class="subheader show-for-small">Doors at 00:00pm</h6>
-                </div>
-              </div><hr>
-
-              <div class="hide-for-small">
-                <div class="row">
-                  <div class="large-1 column">
-                    <img src="http://placehold.it/50x50&amp;text=[img]">
-                  </div>
-
-                  <div class="large-9 columns">
-                    <h5 class="subheader"><a href="#">Venue Name</a></h5>
-                  </div>
-                </div><hr>
-
-                <div class="row">
-                  <div class="large-1 column">
-                    <img src="http://placehold.it/50x50&amp;text=[img]">
-                  </div>
-
-                  <div class="large-9 columns">
-                    <h5 class="subheader"><a href="#">Venue Name</a></h5>
-                  </div>
-                </div><hr>
-
-                <div class="row">
-                  <div class="large-1 column">
-                    <img src="http://placehold.it/50x50&amp;text=[img]">
-                  </div>
-
-                  <div class="large-9 columns">
-                    <h5 class="subheader"><a href="#">Venue Name</a></h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- End Shows -->
-
-
-            <!-- Image -->
-
-            <div class="large-4 small-6 columns">
-              <img src="http://placehold.it/300x465&amp;text=Image">
-            </div>
-
-            <!-- End Image -->
-
-
-            <!-- Feed -->
-
-            <div class="large-4 small-12 columns">
-
-              <h4>Blog</h4><hr>
-              <div class="panel">
-                <h5><a href="#">Post Title 1</a></h5>
-
-                <h6 class="subheader">
-                  Risus ligula, aliquam nec fermentum vitae, sollicitudin eget urna. Suspendisse ultrices ornare tempor...
-                </h6>
-
-                <h6><a href="#">Read More »</a></h6>
-              </div>
-
-              <div class="panel hide-for-small">
-                <h5><a href="#">Post Title 2 »</a></h5>
-              </div>
-
-              <div class="panel hide-for-small">
-                <h5><a href="#">Post Title 3 »</a></h5>
-              </div>
-
-              <a href="#" class="right">Go To Blog »</a>
-
-            </div>
-
-            <!-- End Feed -->
-
-          </div>
-        </div>
-      </div>
-
-    <!-- End Content -->
-
-
-    <!-- Footer -->
-
-      <footer class="row">
-        <div class="large-12 columns"><hr>
-            <div class="row">
-
-              <div class="large-6 columns">
-                  <p>&copy; Copyright 2013 PixelRelay.</p>
-              </div>
-
-              <div class="large-6 small-12 columns">
-                  <ul class="inline-list right">
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                    <li><a href="#">Link 4</a></li>
-                  </ul>
-              </div>
-
-            </div>
-        </div>
-      </footer>
-
-    <!-- End Footer -->
+		<p>
+		&copy; PixelRelay 2013<br/>
+		App: &copy; PixelRelay 2013<br/>
+		Server: <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache 2.0</a>
+		</p>
+      </section>
 
     </div>
-  </div>
-
-  <script>
-  document.write('<script src=js/vendor/' +
-  ('__proto__' in {} ? 'zepto' : 'jquery') +
-  '.js><\/script>')
-  </script>
-  <script src="js/foundation.min.js"></script>
-  <script>
-    $(document).foundation();
-  </script>
-<!-- End Footer -->
-
-</body>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+    
+  </body>
 </html>
