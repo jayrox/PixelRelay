@@ -21,3 +21,9 @@ The following params are sent from the app using POST:
  file_album		-- The Photo Album preference  
  file_name		-- The name of the file within Android  
  file_mime		-- The mime type of the file  
+
+
+==========
+License
+==========
+Apache 2.0
