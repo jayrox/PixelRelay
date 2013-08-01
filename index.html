@@ -55,6 +55,18 @@
 
 		<p>DashClock plugin supports current pending uploads and current upload progress</p>
 
+
+		<h2>Plugin Variables</h2>
+		<p>PixelRelay supports the following variable in the Album name</p>
+		<pre><code>%DATE</code>
+			Replaces the variable with the current date in `yyyy-MM-dd` format.
+		</pre>
+		<pre><code>%DATE(format)</code>
+			Replaces the variable with the current date in a customized format.
+			Example: `dd-MM-yyyy` would become `01-08-2013`
+		</pre>
+
+
 		<h2>Localization</h2>
 
 		<p>If you would like PixelRelay translated into your language please see the <a href="https://github.com/jayrox/pixelrelay_localizations">localizations repo on GitHub</a></p>
@@ -67,26 +79,30 @@
 		License: <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache 2.0</a>
 		</p>
 
+		<h2>TODO List</h2>
+		
+		<p><a href="https://trello.com/b/ixJxQZqL/pixelrelay">Trello</a></p>
+
 		<h2>API</h2>
 		
 		<p>The PixelRelay Android app provides the following params when uploading</p>
 		<pre><code><span class="highlight ss">String</span> version</code>
 		PixelRelay Android app version information.</pre>
-		<pre><code>File uploaded_file</code>
+		<pre><code><span class="highlight ss">File</span> uploaded_file</code>
 		The binary file being uploaded.</pre>
-		<pre><code>String user_email </code>
+		<pre><code><span class="highlight ss">String</span> user_email </code>
 		The google account associated with the upload.</pre>
-		<pre><code>String user_private_key</code>
+		<pre><code><span class="highlight ss">String</span> user_private_key</code>
 		The private code to allow upload access.</pre>
-		<pre><code>String file_host</code>
+		<pre><code><span class="highlight ss">String</span> file_host</code>
 		The image host entered in the android app.
 		Provided for server debug purposes.</pre>
-		<pre><code>String file_album</code>
+		<pre><code><span class="highlight ss">String</span> file_album</code>
 		The album name the user would like
 		the image(s) to be added to.</pre>
-		<pre><code>String file_name</code>
+		<pre><code><span class="highlight ss">String</span> file_name</code>
 		The file's name from Android.</pre>
-		<pre><code>String file_mime</code>
+		<pre><code><span class="highlight ss">String</span> file_mime</code>
 		The file's mime-type from Android.</pre>
 
 		<p class="footer">
