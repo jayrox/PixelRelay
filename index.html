@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<title>PixelRelay</title>
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/pygment_trac.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" href="stylesheets/ie.css">
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+	</head>
+	<body>
+		<div id="header">
+		<nav>
+			<li class="fork"><a href="https://github.com/jayrox/PixelRelay">Fork Server On GitHub</a></li>
+			<li class="downloads2"><a href=""><a href="https://plus.google.com/communities/104129646941026784773"><img src="img/googleplay.png" /></a></li>
+			<li class="downloads"><a href="https://github.com/jayrox/PixelRelay/archive/master.zip">Server ZIP</a></li>
+			<li class="title">DOWNLOADS</li>
+		</nav>
+		</div><!-- end header -->
+	<div class="wrapper">
+		<section>
+		<div id="title">
+			<h1><img src="img/pixelrelay.png">PixelRelay</h1>
+			<p>Instant Uploads on Android</p>
+			<hr>
+			<span class="credits left">Project maintained by <a href="https://github.com/jayrox">jayrox</a></span>
+			<span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
+		</div>
+
+		<h1>Instant Uploads</h1>
+
+		<p>You have complete control of your image uploads.</p>
+
+		<ul>
+			<li>Configurable Image host, Photo album, Authentication</li>
+			<li>Signal: wifi, cellular, signal strength, roaming</li>
+			<li>Power: plugged in, battery level</li>
+			<li>Plugins: Tasker/Locale and DashClock</li>
+		</ul>
+		
+		<h2>Plugins</h2>
+
+		<p>PixelRelay supports Tasker and DashClock</p>
+
+		<p>Tasker integration allows you to configure tasks that can change the photo album and enable/disable automatic uploads.</p>
+
+		<p>DashClock plugin supports current pending uploads and current upload progress</p>
+
+
+		<h2>Plugin Variables</h2>
+		<p>PixelRelay supports the following variables in the Album name</p>
+		<pre><code>%DATE</code>
+		Replaces the variable with the current date
+		in `yyyy-MM-dd` format.
+		</pre>
+		<pre><code>%DATE(format)</code>
+		Replaces the variable with the current date
+		in a customized format.
+		Example: `dd-MM-yyyy` would become `01-08-2013`
+		</pre>
+
+
+		<h2>Localization</h2>
+
+		<p>If you would like PixelRelay translated into your language please see the <a href="https://github.com/jayrox/pixelrelay_localizations">localizations repo on GitHub</a></p>
+
+		<h2>Server Installation</h2>
+
+		<p>
+		The example PixelRelay upload code is written in PHP to allow the most possible server configurations.
+		Downloads: <a href="https://github.com/jayrox/PixelRelay">Fork on GitHub</a> or <a href="https://github.com/jayrox/PixelRelay/archive/master.zip">Download Zip</a><br>
+		License: <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache 2.0</a>
+		</p>
+
+		<h2>API</h2>
+		
+		<p>The PixelRelay Android app provides the following params when uploading</p>
+		<pre><code><span class="highlight ss">String</span> version</code>
+		PixelRelay Android app version information.</pre>
+		<pre><code><span class="highlight ss">File</span> uploaded_file</code>
+		The binary file being uploaded.</pre>
+		<pre><code><span class="highlight ss">String</span> user_email </code>
+		The google account associated with the upload.</pre>
+		<pre><code><span class="highlight ss">String</span> user_private_key</code>
+		The private code to allow upload access.</pre>
+		<pre><code><span class="highlight ss">String</span> file_host</code>
+		The image host entered in the android app.
+		Provided for server debug purposes.</pre>
+		<pre><code><span class="highlight ss">String</span> file_album</code>
+		The album name the user would like
+		the image(s) to be added to.</pre>
+		<pre><code><span class="highlight ss">String</span> file_name</code>
+		The file's name from Android.</pre>
+		<pre><code><span class="highlight ss">String</span> file_mime</code>
+		The file's mime-type from Android.</pre>
+
+		<p class="footer">
+			<img src="img/ohio.png" title="Proudly hacked together in Cincinnati, OH" alt="Proudly hacked together in Cincinnati, OH" >
+			&copy; 2013 PixelRelay<br/>
+			Android app &copy; 2013 PixelRelay<br/>
+			Server code <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache 2.0</a><br/>
+			Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a>
+		</p>
+		</section>
+	</div>
+	<!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+	
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-42607940-1', 'pixelrelay.com');
+		ga('send', 'pageview');
+	</script>
+	
+	</body>
+</html>
