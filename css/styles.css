@@ -189,7 +189,7 @@ mark {
  */
 p,
 pre {
-  margin: 1em 0;
+  margin: 0.5em 0;
 }
 
 /*
@@ -202,7 +202,7 @@ kbd,
 samp {
   font-family: monospace, serif;
   _font-family: 'courier new', monospace;
-  font-size: 1em;
+  font-size: 0.5em;
 }
 
 /*
@@ -570,7 +570,7 @@ code {
   color: #efefef;
   font-size: 13px;
   margin: 0 4px;
-  padding: 4px 6px;
+  padding: 4px 4px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   -o-border-radius: 2px;
