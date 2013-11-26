@@ -119,9 +119,22 @@
 		<h2>API Return</h2>
 		<p>The PixelRelay Android app expects upload results to be returned JSON formatted</p>
 		<pre><code>Error</code>
-			<span class="highlight ss">Success:</span> 0 or 200
-			<span class="highlight ss">Authentication:</span> 401
-			<span class="highlight ss">Server:</span> 500
+		<span class="highlight ss">Success:</span> 0 or 200
+		<span class="highlight ss">Authentication:</span> 401
+		<span class="highlight ss">Server:</span> 500
+		</pre>
+		
+		<pre><code>Code</code>
+		Human readable meaning to the error code.
+		</pre>
+		
+		<pre><code>Name</code>
+		File name/path used to store the uploaded file.
+		</pre>
+		
+		<pre><code>Example</code></pre>
+		<pre>
+		{"error":0,"code":"success","name":"1385475888_236defe674_0YwDpdC9MS.jpeg"}
 		</pre>
 
 		<p class="footer">
