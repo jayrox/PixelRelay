@@ -16,12 +16,12 @@
 	 *
 	 *	version				-- PixelRelay version string
 	 *	uploaded_file		-- The binary file uploaded
-     *  user_email			-- The email address associated to the uploader's Google Play account
-     *  user_private_key	-- The private key used to authenticate the upload
-     *  file_host			-- The Image Host preference from the Android app
-     *  file_album			-- The Photo Album preference
-     *  file_name			-- The name of the file within Android
-     *  file_mime			-- The mime type of the file
+	 *  user_email			-- The email address associated to the uploader's Google Play account
+	 *  user_private_key	-- The private key used to authenticate the upload
+	 *  file_host			-- The Image Host preference from the Android app
+	 *  file_album			-- The Photo Album preference
+	 *  file_name			-- The name of the file within Android
+	 *  file_mime			-- The mime type of the file
 	 *
 	 */
 
@@ -39,7 +39,7 @@
 	define('DEFAULT_ALBUM', 'private');
 
 	// Private key to allow uploads
-    define('PRIVATE_KEY', 'asdfzxcvqwertyhb');
+	define('PRIVATE_KEY', 'asdfzxcvqwertyhb');
 
 	// Rename the file after upload
 	define('RENAME_UPLOAD', true);
