@@ -23,7 +23,7 @@
 	 *  file_name			-- The name of the file within Android
 	 *  file_mime			-- The mime type of the file
 	 *
-	 */
+	*/
 
 	// Allow albums to be created if they do not exist
 	define('ALLOW_ALBUM_CREATION', true);
