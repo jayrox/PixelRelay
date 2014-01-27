@@ -14,7 +14,7 @@ You are free to use any web service framework, language, platform that you want.
   
 The following params are sent from the app using POST:  
   
- version          -- PixelRelay app version
+ version          -- PixelRelay app version  
  uploaded_file		-- The binary file uploaded  
  user_email		    -- The email address associated to the uploader's Google Play account  
  user_private_key	-- The private key used to authenticate the upload  
