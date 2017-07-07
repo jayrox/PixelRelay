@@ -25,108 +25,13 @@
 			<h1><img src="img/pixelrelay.png">PixelRelay</h1>
 			<p>Instant Uploads on Android</p>
 			<hr>
-			<span class="credits left">Project maintained by <a href="https://github.com/jayrox">jayrox</a></span>
-			<span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
 		</div>
 
-		<h1>Instant Uploads</h1>
-
-		<p>You have complete control of your image uploads.</p>
-
-		<ul>
-			<li>Configurable Image host, Photo album, Authentication</li>
-			<li>Signal: wifi, cellular, signal strength, roaming</li>
-			<li>Power: plugged in, battery level</li>
-			<li>Plugins: Tasker/Locale and DashClock</li>
-		</ul>
-		
-		<h2>Plugins</h2>
-
-		<p>PixelRelay supports Tasker and DashClock</p>
-
-		<p>Tasker integration allows you to configure tasks that can change the photo album, private key and enable/disable automatic uploads.</p>
-
-		<p>DashClock plugin supports current pending uploads and current upload progress</p>
-
-		<h2>Plugin Variables</h2>
-		<p>PixelRelay supports the following variables in the Album name</p>
-		<pre><code>%DATE</code>
-		Replaces the variable with the current date
-		in `yyyy-MM-dd` format.
-		</pre>
-		<pre><code>%DATE(format)</code>
-		Replaces the variable with the current date
-		in a customized format.
-		Example: `dd-MM-yyyy` would become `01-08-2013`
-		</pre>
-
-		<a name="qrcode" id="qrcode">&nbsp;</a>
-		<h2>QR Code</h2>
-		<p>QR codes can be used to change the host, album and private key. This is useful for events where multiple people may want to quickly and easily use the same settings.</p>
-		<pre>
-		<span style="float:left;">QR Format:</span>
-		<code style="float:left;">PixelRelay://scan?host=HOSTURL&album=ALBUMNAME&privatekey=PRIVATEKEY</code>
-		</pre>
-		
-		<h2>QR Code Generators</h2>
-		<pre>
-		<a href="http://chart.apis.google.com/chart?chs=200x200&cht=qr&chld=|1&chl=PixelRelay://scan?host=HOSTURL%26album=ALBUMNAME%26privatekey=PRIVATEKEY">Google</a>
-		<a href="https://duckduckgo.com/?q=qr+code+PixelRelay%3A%2F%2Fscan%3Fhost%3DHOSTURL%26album%3DALBUMNAME%26privatekey%3DPRIVATEKEY">DuckDuckGo</a>
-		</pre>
-
-		<h2>Localization</h2>
-
-		<p>If you would like PixelRelay translated into your language please see the <a href="https://github.com/jayrox/pixelrelay_localizations">localizations repo on GitHub</a></p>
-
-		<h2>Server Installation</h2>
-
+		<h1>Event Photos Done Right</h1>
 		<p>
-		The example PixelRelay upload code is written in PHP to allow the most possible server configurations.
-		Downloads: <a href="https://github.com/jayrox/PixelRelay">Fork on GitHub</a> or <a href="https://github.com/jayrox/PixelRelay/archive/master.zip">Download Zip</a><br>
-		License: <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache 2.0</a>
+			
+			
 		</p>
-
-		<h2>API</h2>
-		
-		<p>The PixelRelay Android app provides the following params when uploading</p>
-		<pre><code><span class="highlight ss">String</span> version</code>
-		PixelRelay Android app version information.</pre>
-		<pre><code><span class="highlight ss">File</span> uploaded_file</code>
-		The binary file being uploaded.</pre>
-		<pre><code><span class="highlight ss">String</span> user_email </code>
-		The google account associated with the upload.</pre>
-		<pre><code><span class="highlight ss">String</span> user_private_key</code>
-		The private code to allow upload access.</pre>
-		<pre><code><span class="highlight ss">String</span> file_host</code>
-		The image host entered in the android app.
-		Provided for server debug purposes.</pre>
-		<pre><code><span class="highlight ss">String</span> file_album</code>
-		The album name the user would like
-		the image(s) to be added to.</pre>
-		<pre><code><span class="highlight ss">String</span> file_name</code>
-		The file's name from Android.</pre>
-		<pre><code><span class="highlight ss">String</span> file_mime</code>
-		The file's mime-type from Android.</pre>
-		
-		<h2>API Return</h2>
-		<p>The PixelRelay Android app expects upload results to be returned JSON formatted</p>
-		<pre><code>Error</code>
-		<span class="highlight ss">Success:</span> 0 or 200
-		<span class="highlight ss">Authentication:</span> 401
-		<span class="highlight ss">Server:</span> 500
-		</pre>
-		
-		<pre><code>Code</code>
-		Human readable meaning to the error code.
-		</pre>
-		
-		<pre><code>Name</code>
-		File name/path used to store the uploaded file.
-		</pre>
-		
-		<pre><code>Example</code>
-		{"error":200,"code":"success","name":"1385475888_e674_C9MS.jpeg"}
-		</pre>
 
 		<p class="footer">
 			<img src="img/ohio.png" title="Proudly hacked together in Cincinnati, OH" alt="Proudly hacked together in Cincinnati, OH" >
